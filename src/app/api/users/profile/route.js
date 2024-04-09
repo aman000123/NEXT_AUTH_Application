@@ -7,7 +7,7 @@ import { getDataFromToken } from "@/helpers/getdatafromToken";
 
 connect()
 
-export async function POST(NextRequest) {
+export async function GET(NextRequest) {
 
     //EXTRA DATAS FROM TOKEN
     const userId = await getDataFromToken(NextRequest)
